@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic');
+
+
+html, body {
+  height: 100%;
+  color: black;
+  font-family: 'Open Sans', sans-serif, Arial;
+}
+
+
+:global {
+
+  #root {
+    width: 100%;
+    min-height: 100%;
+    background-color: darkgray;
+    user-select: none;
+  }
+
+  .wrapper {
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: calc(100vh - 120px);
+  }
+
+
+}
+
+

@@ -1,0 +1,16 @@
+.error {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  background-color: red;
+  z-index: 10000;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  opacity: 0;
+  transition: ease-out opacity 0.8s;
+
+  &.active {
+    opacity: 0.9;
+  }
+}

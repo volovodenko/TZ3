@@ -1,0 +1,35 @@
+.footer {
+  background-color: #161a1d;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.footerWrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.info {
+  text-align: center;
+  color: #999;
+  padding-top: 15px;
+
+  font-size: 14px;
+
+  p {
+    margin-bottom: 2px;
+
+
+    a {
+      color: #990;
+      text-decoration: none;
+
+      &:hover {
+        color: yellow;
+        text-decoration: underline;
+      }
+    }
+  }
+}

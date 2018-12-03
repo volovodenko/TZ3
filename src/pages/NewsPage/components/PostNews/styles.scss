@@ -1,0 +1,74 @@
+.postNews {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font: inherit;
+    border: 2px solid cornflowerblue;
+    border-radius: 5px;
+    background-color: #10055e;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  button {
+    font: inherit;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: darkorange;
+    color: rgba(0, 0, 0, 0.7);
+    border: 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 3px black;
+    outline: 0 !important;
+
+    &:hover {
+      background-color: darkblue;
+      color: #999;
+      cursor: pointer;
+    }
+  }
+
+
+  input {
+    height: 40px;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+
+
+}
+
+.addNews {
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    margin-right: 10px;
+  }
+
+  span {
+    display: flex;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    svg {
+      margin: auto 0;
+    }
+  }
+
+
+
+}

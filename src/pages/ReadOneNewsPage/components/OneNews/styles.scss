@@ -1,0 +1,54 @@
+.readNews {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.title {
+  margin-left: 40px;
+  margin-right: 10px;
+  min-height: 32px;
+}
+
+
+.header {
+  height: 32px;
+  margin-bottom: 15px;
+  display: flex;
+
+  span {
+    margin: auto 0;
+    margin-right: 10px;
+    font-style: italic;
+  }
+
+  span:first-child {
+    width: 32px;
+    height: 32px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.content {
+  text-align: justify;
+}
+
+.edited {
+  font-size: 0.8rem;
+  color: darkblue;
+}
+

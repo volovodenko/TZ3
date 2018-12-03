@@ -1,0 +1,42 @@
+.editDelete {
+  display: flex;
+
+  span {
+    display: flex;
+    line-height: 50px;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      cursor: pointer;
+
+      svg {
+        fill: red;
+      }
+    }
+
+    svg {
+      margin: auto auto;
+    }
+  }
+
+  a {
+    display: flex;
+    line-height: 50px;
+    width: 32px;
+    height: 32px;
+    color: black;
+    text-decoration: none;
+
+    svg {
+      margin: auto auto;
+    }
+
+
+    &:hover {
+      svg {
+        fill: blue;
+      }
+    }
+  }
+}

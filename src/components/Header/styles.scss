@@ -1,0 +1,42 @@
+.header {
+  height: 30px;
+  background-color: #161a1d;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 5px black;
+
+}
+
+.menuWrapper {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1280px;
+  color: #999;
+
+  svg {
+    transition: ease-in-out fill .2s;
+    margin: auto 0;
+  }
+
+  a {
+    display: flex;
+    color: #999;
+    text-decoration: none;
+    transition: ease-in-out color .2s;
+    outline: 0 !important;
+    line-height: 30px;
+
+    &:hover {
+      color: white;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+}

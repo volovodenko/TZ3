@@ -1,0 +1,28 @@
+.saveCancelButtons {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+  button, a {
+    text-decoration: none;
+    font: inherit;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: darkorange;
+    color: rgba(0, 0, 0, 0.7);
+    border: 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 3px black;
+    outline: 0 !important;
+
+    &:hover {
+      background-color: darkblue;
+      color: #999;
+      cursor: pointer;
+    }
+  }
+
+}

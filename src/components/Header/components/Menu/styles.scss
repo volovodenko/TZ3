@@ -1,0 +1,14 @@
+.nav {
+  width: 10%;
+
+  ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      margin-right: 10px;
+    }
+  }
+}

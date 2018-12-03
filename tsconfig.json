@@ -1,0 +1,41 @@
+{
+  //https://www.typescriptlang.org/docs/handbook/compiler-options.html
+  "compilerOptions": {
+    //Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
+    "allowSyntheticDefaultImports": true,
+    //Support JSX in .tsx files: "react" or "preserve"
+    "jsx": "react",
+    //Specify module code generation: "None", "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015" or "ESNext".
+    "module": "esnext",
+    //Remove all comments except copy-right header comments beginning with /*!
+    "removeComments": true,
+    //Determine how modules get resolved. Either "Node" for Node.js/io.js style resolution, or "Classic"
+    "moduleResolution": "node",
+    //Raise error on expressions and declarations with an implied any type.
+    "noImplicitAny": true,
+    //Generates corresponding .map file.
+    "sourceMap": true,
+    //Specify ECMAScript target version: "ES3" (default), "ES5", "ES6"/"ES2015", "ES2016", "ES2017" or "ESNext".
+    "target": "esnext",
+    //Transpile each file as a separate module
+    "isolatedModules": true,
+
+
+
+    //for alias
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/typings"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

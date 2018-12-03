@@ -1,0 +1,75 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+//  "rulesDirectory": ["node_modules/tslint-eslint-rules/dist/rules"],
+  "rules": {//for typescript
+    //Bans the use of specified console methods.
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-unused-variable": false,
+    //Require a default case in all switch statements.
+    "switch-default": true,
+    //Requires single or double quotes for string literals.
+    "quotemark": [true, "single"],
+    //Disallows one or more blank lines in a row.
+    "no-consecutive-blank-lines": false,
+    //Ensures the file ends with a newline.
+    "eofline": true,
+    //Checks ordering of keys in object literals.
+    "object-literal-sort-keys": false,
+    //Requires or disallows trailing commas in array and object literals, destructuring assignments, function typings,
+    //named imports and exports and function parameters.
+    "trailing-comma": false,
+    //Require or disallow a space before function parenthesis
+    "space-before-function-paren": [true, {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
+    //Requires that import statements be alphabetized and grouped.
+    "ordered-imports": false,
+    //Disallows unused expression statements.
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    //Enforces formatting rules for single-line comments.
+    "comment-format": false,
+    //Requires type definitions to exist.
+    "typedef": true,
+    //Requires or disallows whitespace for type definitions.
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    //Disallows trailing whitespace at the end of a line.
+    "no-trailing-whitespace": false,
+    //Requires that variable declarations use const instead of let and var if possible.
+    "prefer-const": true,
+    //Enforces consistent semicolon usage at the end of every statement.
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    //Ensures proper spacing between import statement keywords
+    "import-spacing": true,
+    //Requires explicit visibility declarations for class members.
+    "member-access": false,
+    //Disallows importing modules that are not listed as dependency in the project’s package.json
+    "no-implicit-dependencies": false,
+
+    //Disallows importing any submodule.
+    "no-submodule-imports": false,
+    //Requires lines to be under a certain max length.
+    "max-line-length": [true, {"limit": 120, "ignore-pattern": "^import |^export {(.*?)}"}]
+
+  },
+  "jsRules": {//for javascript
+
+  }
+}
